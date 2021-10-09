@@ -26,6 +26,11 @@ img.homePage {
   top: 300px;
 }
 
+.logo-1 {
+  bottom: 150px;
+  position: absolute;
+}
+
 h1 {
   font-size: 28pt;
 }
@@ -74,8 +79,8 @@ position: relative;
 .logo {
 position: absolute;
 margin-top: 10px;
-
 }
+
 .container {
   width: 100％;
   position: relative;
@@ -190,8 +195,8 @@ left: 0;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-  top: 800px;
   left: 250px;
+  bottom: 10px;
   position: absolute;
 }
 
