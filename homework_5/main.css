@@ -142,6 +142,36 @@ left: 0;
  top: 150px;
 }
 
+.left {
+  position: relative;
+}
+
+.goback {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.picrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  top: 80%;
+  left: 40%;
+}
+
+.pic {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+
 .right {
   position: relative;
 }
@@ -196,8 +226,7 @@ left: 0;
   align-items: center;
   flex-wrap: nowrap;
   left: 250px;
-  bottom: 10px;
-  position: absolute;
+ position: absolute;
 }
 
 .cart a {
