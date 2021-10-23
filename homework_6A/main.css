@@ -196,6 +196,7 @@ left: 0;
   width: 40px;
   height: 40px;
   margin: 10px;
+  cursor: pointer;
 }
 
 .filling {
@@ -209,6 +210,7 @@ left: 0;
   width: 80px;
   height: 30px;
   text-align: center;
+  cursor: pointer;
 }
 
 .filling:focus {
@@ -231,6 +233,7 @@ left: 0;
   width: 30px;
   height: 30px;
   text-align: center;
+  cursor: pointer;
 }
 
 .cart {
@@ -239,11 +242,19 @@ left: 0;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-  left: 250px;
+  left: 220px;
   top: 600px;
  position: absolute;
 }
 
 .cart a {
   margin: 10px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.color.clicked {
+  border: 1px solid black;
 }

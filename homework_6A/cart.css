@@ -10,7 +10,7 @@ body {
   position: relative;
   }
   
-  .header a {
+.header a {
     float: right;
     padding: 15px;
     text-decoration: none;
@@ -19,20 +19,50 @@ body {
     margin-top: 10px;
   }
   
-  .header .focus {
+.header .focus {
     color: #ffd177;
     font-weight: bold;
   }
   
-  .logo {
+.logo {
   position: absolute;
   margin-top: 10px;
   }
 
-  .container {
+.container {
     width: 100％;
+    height: 764px;
     position: relative;
+    top: 100px;
   }
+  
+.product-1 {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  width: 90%;
+  height: 40%;
+  margin: 10px;
+}
+
+.product-1 p {
+  margin-left: 210px;
+  margin-top: -140px;
+}
+
+.price-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: flex-start;
+}
+
+.price-1 img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 10px;
+}
 
 .qty {
     text-decoration: none;
@@ -45,20 +75,45 @@ body {
     width: 30px;
     height: 30px;
     text-align: center;
+    cursor: pointer;
   }
 
-  .product-1 {
+
+.product-detail-1 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
-    left: 250px;
-    top: 400px;
+    left: 200px;
+    top: 130px;
    position: absolute;
   }
+
+
+.color {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.filling {
+  text-decoration: none;
+  font-size: 16pt;
+ background-color: black;
+  padding: 10px;
+  color: white;
+  padding: 10px;
+  margin: 15px;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+}
+
+
   
-  .product-2 {
+.product-2 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -68,3 +123,84 @@ body {
     top: 600px;
    position: absolute;
   }
+
+
+  
+.product-2 {
+  position: absolute;
+  left: 10px;
+  top: 250px;
+  width: 90%;
+  height: 40%;
+  margin: 10px;
+}
+
+.product-2 p {
+  margin-left: 210px;
+  margin-top: -140px;
+}
+
+.price-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: flex-start;
+}
+
+
+.price-2 img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+
+.product-detail-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  left: 200px;
+  top: 230px;
+ position: absolute;
+}
+
+.price h1 {
+  position: absolute;
+  bottom: 0px;
+  right: 40px;
+}
+
+.price h1 span {
+  font-weight: 100;
+  font-size: 16pt;
+}
+
+.product-price-1 {
+  position: absolute;
+  top: 70px;
+  right: 40px;
+}
+
+.product-price-2 {
+  position: absolute;
+  top: 370px;
+  right: 40px;
+}
+
+.paypal {
+  border: 2px solid #009cde;
+  padding: 10px;
+  color: #009cde;
+  text-decoration: none;
+  font-weight: 700;
+  position: absolute;
+  right: 40px;
+  bottom: -60px;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  font-size: 20pt;
+}
