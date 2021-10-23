@@ -1,4 +1,4 @@
-Additional Work:
-1. I designed the logo for my brand identity and used it in my interactive prototype.
-2. The "go back" icon comes from figma file instead of online resources.
-3. I added hover effect and tailored button at focus stage.
+External Resources:
+- Product Information and Images:
+https://www.target.com/p/lillian-be-our-guest-decorative-pillow-levtex-home/-/A-82866629
+https://www.target.com/p/overfilled-bed-pillow-made-by-design/-/A-78684893?preselect=78623090#lnk=sametab 
