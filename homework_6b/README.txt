@@ -1,6 +1,6 @@
-Major work for homwwork 6A:
-Product Detail Page: https://leila071497.github.io/PUI-2021Fall/homework_6A/productDetail.html
-Shopping Cart Page: https://leila071497.github.io/PUI-2021Fall/homework_6A/shoppingCart.html
+Major work for homwwork 6B:
+Product Detail Page: https://leila071497.github.io/PUI-2021Fall/homework_6b/productDetail.html
+Shopping Cart Page: https://leila071497.github.io/PUI-2021Fall/homework_6b/shoppingCart.html
 
 Low and high fidelity prototype is in the prototype_reflection.pdf file
 
