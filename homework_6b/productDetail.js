@@ -16,7 +16,7 @@ var colorIndexes = ["yellow","blue","black","grey"];
 var numColors = colorIndexes.length;
 var colorSelection = new Array(numColors).fill(false);
 // boolean array to keep track of style choice
-var styleIndexes = ["foam","feathers","cotto n"];
+var styleIndexes = ["foam","feathers","cotton"];
 var numStyles = styleIndexes.length;
 var styleSelection = new Array(numStyles).fill(false);
 // integer to keep track of quantity
