@@ -8,5 +8,5 @@ External Resources:
 - Product Information and Images:
 https://www.target.com/p/lillian-be-our-guest-decorative-pillow-levtex-home/-/A-82866629
 https://www.target.com/p/overfilled-bed-pillow-made-by-design/-/A-78684893?preselect=78623090#lnk=sametab 
-- Udemy Course
-https://www.udemy.com/course/50-projects-50-days/learn/lecture/23600012?start=15#overview 
+
+p.s. I think I need help for localstorage to get and retrieve data from product page to shopping cart

@@ -9,7 +9,7 @@ body {
     height: 10%;
   position: relative;
   }
-  
+
 .header a {
     float: right;
     padding: 15px;
@@ -18,12 +18,12 @@ body {
     font-size: 16pt;
     margin-top: 10px;
   }
-  
+
 .header .focus {
     color: #ffd177;
     font-weight: bold;
   }
-  
+
 .logo {
   position: absolute;
   margin-top: 10px;
@@ -35,7 +35,7 @@ body {
     position: relative;
     top: 100px;
   }
-  
+
 .product-1 {
   position: absolute;
   left: 10px;
@@ -112,7 +112,7 @@ body {
 }
 
 
-  
+
 .product-2 {
     display: flex;
     flex-direction: row;
@@ -125,7 +125,7 @@ body {
   }
 
 
-  
+
 .product-2 {
   position: absolute;
   left: 10px;
@@ -203,4 +203,20 @@ body {
   height: 40px;
   text-align: center;
   font-size: 20pt;
+}
+
+.clear {
+  border: 2px solid #e40606;
+  padding: 10px;
+  color: #e40606;
+  text-decoration: none;
+  font-weight: 700;
+  position: absolute;
+  left: 40px;
+  bottom: -60px;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  font-size: 20pt;
+  cursor:pointer;
 }

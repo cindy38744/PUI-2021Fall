@@ -11,11 +11,11 @@
 <body>
     <div class="header">
         <img src="logoName.png" alt="logo" class="logo" />
-        <a class="focus" href="shoppingCart.html">Shopping Cart</a>
+        <a class="focus" id = "cartText" href="shoppingCart.html">Shopping Cart</a>
         <a href="productPage.html">Products</a>
         <a href="contact.html">Contact</a>
       </div>
-    
+
 <div class="container">
 
 <div class="product-1">
@@ -29,11 +29,11 @@
 </div>
 
 <div class="product-detail-1">
-    <div class="qty">-</div>
-    <h1>2</h1>
-    <div class="qty">+</div>
-    <div style="background-color: #c4c4c4" class="color"></div>
-    <div class="filling">Foam</div>
+    <div class="qty" id="sub1">-</div>
+    <h1 id="total1">0</h1>
+    <div class="qty" id="add1">+</div>
+    <!--<div style="background-color: #c4c4c4" class="color"></div>-->
+    <!--<div class="filling">Foam</div>-->
 </div>
 
 </div>
@@ -45,17 +45,17 @@
         <img src="img1.jpeg" alt="Lillian Pillow">
         <h2>Lillian Be Our Guest Decorative Pillow</h2>
     </div>
-    <p>Levtex Home Collection</p>
+    <p id="description2">Levtex Home Collection</p>
     </div>
-    
+
     <div class="product-detail-2">
-        <div class="qty">-</div>
-        <h1>1</h1>
-        <div class="qty">+</div>
-        <div style="background-color: #009cde" class="color"></div>
-        <div class="filling">Cotton</div>
+        <div class="qty" id="sub2">-</div>
+        <h1 id="total2">0</h1>
+        <div class="qty" id="add2">+</div>
+        <!--<div style="background-color: #009cde" class="color"></div>-->
+        <!--<div class="filling">Cotton</div>-->
     </div>
-    
+
     </div>
 
 
@@ -63,11 +63,11 @@
 <div class="price">
 <h2 class=product-price-1>$39.98</h2>
 <h2 class=product-price-2>$39.99</h2>
-<h1><span>Total</span>$79.97</h1>
+<h1 id="total3"><span></span>Total: $0.00</h1>
 </div>
-
 <a class="paypal" href="checkout.html">Paypal</a>
-
+<a class="clear" id ="clearButton" >Clear</a>
 </div>
+<script src="shoppingCart.js"></script>
 </body>
 </html>

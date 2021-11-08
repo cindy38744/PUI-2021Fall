@@ -1,14 +1,14 @@
-const yellow = document.getElementById("yellow")
-const blue = document.getElementById("blue")
-const black = document.getElementById("black")
-const grey = document.getElementById("grey")
-const foam = document.getElementById("foam")
-const feathers = document.getElementById("feathers")
-const cotton = document.getElementById("cotton")
-const btn = document.querySelector(".btn")
+const yellow = document.getElementById("yellow");
+const blue = document.getElementById("blue");
+const black = document.getElementById("black");
+const grey = document.getElementById("grey");
+const foam = document.getElementById("foam");
+const feathers = document.getElementById("feathers");
+const cotton = document.getElementById("cotton");
+const btn = document.querySelector(".btn");
 const add = document.getElementById("addition");
 const sub = document.getElementById("subtraction");
-const qty = document.getElementById("quantityToAdd")
+const qty = document.getElementById("quantityToAdd");
 const crt = document.getElementById("cartText");
 
 // boolean array to keep track of color choice
@@ -22,6 +22,8 @@ var styleSelection = new Array(numStyles).fill(false);
 // integer to keep track of quantity
 var quantityToAdd = 0;
 var cartTotal = 0;
+// map to keep track of shopping cart
+var cartMap = new Map();
 
 // function that returns the current selected color, if any
 function currentColor(){
@@ -44,7 +46,7 @@ function selectColor(colorName){
     colorSelection.fill(false); // resets the selection array
     colorSelection[colorIndex] = true; // selects the new color
 }
-// function that updates the styleSelection 
+// function that updates the styleSelection
 function selectStyle(styleName){
     var styleIndex = styleIndexes.indexOf(styleName);
     styleSelection.fill(false); // resets the selection array
@@ -67,7 +69,7 @@ function addColorBorder(){
             break;
          case "grey":
             grey.style.border = blackOutline;
-            break;            
+            break;
     }
 }
 // function that fills black the style selection
@@ -122,8 +124,27 @@ function updateStyleBorder(){
 function updateQuantityValue(){
     qty.textContent = quantityToAdd;
 }
+// function that returns a string key of current item
+function currentItemKey(){
+    var key = currentColor()+"_"+currentStyle();
+    return key;
+}
+// function that updates the cart and local storage values
+function updateCart(){
+    var key = currentItemKey();
+    var curValue = quantityToAdd;
+    if (cartMap.has(key))
+        var curValue  = cartMap.get(key) + curValue;
+    cartMap.set(key,curValue);
 
-
+    // update local storage
+    window.localStorage.setItem(key,curValue);
+}
+// function that updates cart total text
+function updateCartText(){
+    if(cartTotal > 0)
+        crt.textContent = "Shopping Cart ("+cartTotal+")";
+}
 
 // color selection event listeners
 yellow.addEventListener('click', () => {
@@ -170,9 +191,23 @@ add.addEventListener('click', () => {
 
 
 btn.addEventListener("click", function(){
+    updateCart();
     alert("Added "+quantityToAdd+" to cart!")
     cartTotal += quantityToAdd;
     if(cartTotal > 0)
         crt.textContent = "Shopping Cart ("+cartTotal+")";
 })
 
+function pullFromStorage(){
+    for(var i = 0; i < localStorage.length; i++){
+      var currentKey = localStorage.key(i);
+      var quantity = localStorage.getItem(currentKey);
+      cartTotal += parseInt(quantity);
+    }
+  }
+
+// trigger yellow_foam default and load last additions
+yellow.dispatchEvent(new Event('click'));
+foam.dispatchEvent(new Event('click'));
+pullFromStorage();
+updateCartText();
