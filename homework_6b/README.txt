@@ -1,3 +1,5 @@
+****Local storage doesn't work on github, but it can work locally****
+
 Major work for homwwork 6B:
 Product Detail Page: https://leila071497.github.io/PUI-2021Fall/homework_6b/productDetail.html
 Shopping Cart Page: https://leila071497.github.io/PUI-2021Fall/homework_6b/shoppingCart.html
