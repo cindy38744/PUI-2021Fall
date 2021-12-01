@@ -1,0 +1,58 @@
+body {
+    background: #ffffff;
+    font-family: "Helvetica", sans-serif;
+}
+
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;    
+}
+
+#mainNavbar .nav-link {
+    color: #000;
+    
+}
+
+
+#mainNavbar .nav-link:hover {
+    color: #FBBF2C;
+}
+
+#mainNavbar .navbar-brand {
+    color: #000;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+
+#mainNavbar .navbar-brand:hover {
+    color: #FBBF2C;
+    font-size: 1.5rem;
+}
+
+.fab fa-dribbble {
+    font-size: 24px;
+    color: black;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .blurb h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
